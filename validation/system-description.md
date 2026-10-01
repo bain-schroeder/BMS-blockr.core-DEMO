@@ -121,7 +121,7 @@ The table above is a file map; the behavioural claims for each row are cited in 
 | `manage_stacks` (`R/plugin-stacks.R`) | Add/remove/modify stacks via `add`/`rm`/`mod` (`R/plugin-stacks.R:L1-L15`) | `R/plugin-stacks.R:L25-L29` |
 | `edit_block` (`R/plugin-block.R`) | Edit block title; remove and insert blocks (`R/plugin-block.R:L1-L9`) | `R/plugin-block.R:L19-L22` |
 | `edit_stack` (`R/plugin-stack.R`) | Edit stack name; remove stack (`R/plugin-stack.R:L1-L8`) | `R/plugin-stack.R:L18-L20` |
-| `generate_code` (`R/plugin-code.R`) | Expose reproducible code, default modal with copy-to-clipboard (`R/plugin-code.R:L1-L8`) | `R/plugin-code.R:L18-L22` |
+| `generate_code` (`R/plugin-code.R`) | Expose reproducible code (`R/plugin-code.R:L1-L8`); the default server shows a modal with the code in a `pre` element and no footer (`R/plugin-code.R:L42-L57`). **Discrepancy:** the roxygen text mentions copy-to-clipboard functionality (`R/plugin-code.R:L5-L6`), which the default server code does not implement. | `R/plugin-code.R:L18-L22` |
 | `notify_user` (`R/plugin-notification.R`) | Show block conditions as toasts, tracked per block (`R/plugin-notification.R:L1-L9`) | `R/plugin-notification.R:L20-L22` |
 | `ctrl_block` (`R/plugin-control.R`) | External control of block inputs (`R/plugin-control.R:L1-L17`) | `R/plugin-control.R:L28-L30` |
 

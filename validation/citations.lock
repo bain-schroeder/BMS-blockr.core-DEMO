@@ -77,6 +77,8 @@ R/plugin-blocks.R:L1-L12	3c66407f15e155bad09f44db5bb697fa
 R/plugin-blocks.R:L22-L26	d51008e89c1cd321ff27ad2af3ee1a25
 R/plugin-code.R:L1-L8	d72c57720684824a81677fc942da52f6
 R/plugin-code.R:L18-L22	046d8ef190adb2ff8c0b30a443a13cf5
+R/plugin-code.R:L42-L57	33fbc5418c98f132d43e47cc4038e0a5
+R/plugin-code.R:L5-L6	27729b03dfdd7d1cb4bfbde8efd39a7d
 R/plugin-control.R:L1-L17	e463ef74f44355adea8ec2905ba7bec9
 R/plugin-control.R:L120-L130	dff7283914f79ef514e52801a89a6260
 R/plugin-control.R:L28-L30	ad80590e90b7c1f28c6a17baf027a03d
