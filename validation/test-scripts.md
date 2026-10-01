@@ -13,7 +13,7 @@
 3. When running `testthat::test_file()` directly, first run `Sys.setenv(NOT_CRAN = "true")`; otherwise testthat treats the run as a CRAN run and skips `expect_snapshot()` expectations and tests guarded by `skip_on_cran()`. `devtools::test()` sets this automatically.
 4. The commands below load `blockr.core` from source (`load_package = "source"`). testthat automatically sources the shared fixtures `tests/testthat/helpers.R:L1-L9` and `tests/testthat/setup.R:L1-L3` before any test runs.
 5. To execute the complete suite in one step run `devtools::test()`; to execute every script in one file run `testthat::test_file("tests/testthat/test-<stem>.R", package = "blockr.core", load_package = "source")`.
-6. A script **passes** when the reporter shows `FAIL 0` for it, which means every listed expected result was observed. Record the reporter output as objective evidence.
+6. A script **passes** when the reporter shows `FAIL 0` and `SKIP 0` for it, which means every listed expected result was observed (a skipped expectation is not evidence). Record the reporter output as objective evidence.
 
 Each script lists, in source order: the actions that set up state (code to run, with its line citation), the expected result in plain language, the exact expectation code with its line citation, and the citation of the package code whose behaviour the expectation verifies. Steps marked _compound_ wrap several expectations inside one action (for example `shiny::testServer()` or `withr::with_*()`); all nested expected results must hold.
 

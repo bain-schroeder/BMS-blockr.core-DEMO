@@ -748,7 +748,7 @@ render_scripts <- function() {
             pkg, cite("tests/testthat/helpers.R", 1, length(readLines("tests/testthat/helpers.R"))),
             cite("tests/testthat/setup.R", 1, length(readLines("tests/testthat/setup.R")))),
     "5. To execute the complete suite in one step run `devtools::test()`; to execute every script in one file run `testthat::test_file(\"tests/testthat/test-<stem>.R\", package = \"blockr.core\", load_package = \"source\")`.",
-    "6. A script **passes** when the reporter shows `FAIL 0` for it, which means every listed expected result was observed. Record the reporter output as objective evidence.",
+    "6. A script **passes** when the reporter shows `FAIL 0` and `SKIP 0` for it, which means every listed expected result was observed (a skipped expectation is not evidence). Record the reporter output as objective evidence.",
     "",
     "Each script lists, in source order: the actions that set up state (code to run, with its line citation), the expected result in plain language, the exact expectation code with its line citation, and the citation of the package code whose behaviour the expectation verifies. Steps marked _compound_ wrap several expectations inside one action (for example `shiny::testServer()` or `withr::with_*()`); all nested expected results must hold.",
     "",
